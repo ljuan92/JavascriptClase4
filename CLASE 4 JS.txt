@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java script clase 4</title>
+</head>
+<body>
+    <script>
+
+//Imprimir numeros del 1 al 500
+/*for(var i=1; i<=500; i++){
+    document.write(i+"<br>")
+}
+    
+var num = 1;
+while (num<=500){
+    document.write(num+"<br>");
+num++;
+}*/ 
+
+
+//Pedir una nota de 0 a 10 y mostrarla de la forma: insuficiente, suficiente, bien...
+
+/*var nota = parseInt(prompt('Escriba se nota por favor'));
+
+if(nota<7){
+    document.write('Insufiente');
+}
+else if(nota==7){
+    document.write('Suficiente')
+}
+else if(nota>7){
+    document.write('Bien')
+}  
+else{
+    document.write('Valor inválido')
+}*/
+
+//Desarrolar un programa que cargue en un arreglo 5 valores y 
+
+/*var num = [1,2,3,4,5];
+var suma = 0;
+
+for( var i=0; i<num.length; i++){
+    //document.write(num[i]+"<br>");
+    suma=suma+num[i];    
+}
+    document.write(suma);
+    //document.write(suma/num.length);*/
+
+var numero = new Array(3);
+
+
+console.log(numero);
+
+
+
+for(var i=0,; i<numero.length; i++){}
+    numero[i]=parseInt(prompt('ingrese un valor'));
+}
+
+    </script>
+</body>
+</html>
+<script>
+*****************************************************
+ /*function saludar (a,b){
+    //document.write(a);
+    //alert("¡HOLA!");
+    return a+b;
+ }
+ 
+//document.write(saludar(1,2));
+saludar(8,8);
+saludar(7,9);
+
+document.getElementById("caja").innerHTML=saludar(1,2);
+
+document.getElementById("caja1").innerHTML=saludar(8,9);
+
+document.getElementById("caja2").innerHTML=saludar(7,9);*/
+**********************************************************
+//Ingresar dos numeros enteros y determinar cual es el mayor
+
+ <script type="text/javascript">
+
+        function mayor(a,b){
+            if(a>b){
+                return a;
+                /*document.write("El mayor es "+a);*/
+            }
+
+            else{
+                return b;
+            }
+
+        }
+        document.write(mayor(2,5));
+
+    </script>
+***********************************************************
+Crear un contador que inicie en cero(0) y se detenga en el número que indique el usuario.
+
+<script type="text/javascript">
+
+        function contador(a){
+            for(var i=0;i<=a;i++){
+                document.write(i+"<br>");
+
+            }
+        }
+        var stop=parseInt(prompt("indique donde se detiene:"));
+                contador(stop);
+            
+***************************************************************
+Boton (fuera del script)
+
+
+<body>
+    <script type="text/javascript">
+            
+    </script>
+
+            <button onclick="alert('Hoy es viernes')">Boton!
+             </button>
+
+</body>
+
+**********************************************
+boton+campo de texto
+
+<body>
+    <script type="text/javascript">
+            
+    </script>
+
+            <button onclick="alert('Hoy es viernes')">Boton!
+             </button>
+
+            <input type="text" name=""onfocus="alert('llegaste!')">
+
+</body>
+***************************************************
+
+<body>
+
+    <h1 id="caja" style="background:green;">El color es green</h1>
+
+    <button onclick="colores('blue')"> Blue </button>
+    <button onclick="colores('red')">red </button>
+    <button onclick="colores('green')"> green </button>
+    <button onclick="colores('pink')"> pink </button>
+
+    <script type="text/javascript">
+           
+            function colores(color){
+            document.getElementById('caja').innerHTML = 'El color es ' + color
+            document.getElementById('caja').style.background = color
+            //alert('El color es ' + color)
+
+}
+
+    </script>
+
+       
+
+     
+             
+
+
+</body>
